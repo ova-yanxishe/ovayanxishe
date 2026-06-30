@@ -293,6 +293,7 @@ const i18n = {
     studyCardHint: "ORIENTAL VITAL AESTHETICS · DAILY CARD",
     testLabel: "每日测试",
     testTitle: "今日想先看哪一签？",
+    testQuietNote: "抽签前，先深呼吸三次，让心安静下来。心头无事不起念，起念再看今日提示。",
     testLove: "感情签",
     testWealth: "财气签",
     testHealth: "身心签",
@@ -407,6 +408,7 @@ const i18n = {
     studyCardHint: "ORIENTAL VITAL AESTHETICS · DAILY CARD",
     testLabel: "Daily Reading",
     testTitle: "Which note do you want today?",
+    testQuietNote: "Before drawing, take three quiet breaths. Ask only when the heart has a real question.",
     testLove: "Love",
     testWealth: "Wealth",
     testHealth: "Wellbeing",
@@ -1194,6 +1196,180 @@ const oracleCopy = {
   }
 };
 
+const dailyReadingAddons = {
+  zh: {
+    wealth: [
+      "今日更适合先整理一个能被人看懂的价值点，再谈价格。把话说清楚，财气才容易落地。",
+      "今天不宜贪多，先把一个小服务、小作品或一个旧客户跟进到底，回款感会更稳。",
+      "若要谈合作，先讲边界与交付，不急着给优惠。清楚，比热情更能让人放心。",
+      "今日适合做复盘：谁真正需要你、谁只是在消耗你。筛选之后，才有真正的正向流动。"
+    ],
+    career: [
+      "今天适合把方向写下来，再拆成一个能马上完成的小动作。事情先动起来，气才会接上。",
+      "今日适合沟通、约见、递作品，但表达要留余地。过满的话，反而压住后续空间。",
+      "今天适合修流程、定报价、整理案例。专业感不是说得多，而是让别人一眼看见你的秩序。",
+      "今日不必急着证明自己，先把最强的一项能力摆出来。主线清楚，别人更容易信任你。"
+    ],
+    love: [
+      "今天关系里最重要的是“说清楚，但不逼迫”。温和表达，比反复试探更有力量。",
+      "今日适合观察对方是否有行动，不要只被情绪和承诺带走。真正稳定的关系，会让人心里有底。",
+      "如果心里有委屈，先把感受整理成一句能被听懂的话。表达不是争输赢，是让关系有路可走。",
+      "今日不宜把所有注意力都放在对方身上。先把自己安顿好，关系才不会失衡。"
+    ],
+    beauty: [
+      "今天的美感重点在“干净的气色”。少一点杂乱，多一点舒展，脸上的神会自然出来。",
+      "今日穿搭不求复杂，求一个让你显得精神的焦点：领口、发型、唇色或一件干净外套。",
+      "今天适合让身体先松开。肩颈一松，眼神和脸部线条都会更柔和。",
+      "今日美感宜留白，颜色不要堆太满。越轻、越清、越有余地，越显气质。"
+    ],
+    calm: [
+      "今天先别急着给人生下结论。把眼前一件小事做好，心会慢慢回到自己身上。",
+      "今日适合少刷一点信息，多听身体的声音。真正的清醒，常常从安静开始。",
+      "如果觉得乱，先整理一个角落、一张桌子或一段待办。外在秩序会把心神慢慢带回来。",
+      "今天把标准放低一点，把呼吸放慢一点。能稳住自己，就是一种很重要的进步。"
+    ],
+    health: [
+      "今天先照顾睡眠、饮水和肩颈。身体松一点，脸上的紧张感也会少一点。",
+      "今日不做医疗判断，只提醒你观察身体信号：疲惫、焦躁、眼干、胃口，都是需要被照顾的语言。",
+      "今天适合热食、慢走、少冰冷。让身体有温度，人也会显得更安稳。",
+      "若状态不好，先减少消耗。少一点熬夜和硬撑，比临时补救更有用。"
+    ]
+  },
+  en: {
+    wealth: [
+      "Today favors making one value point easy to understand before discussing price. Clarity helps money land.",
+      "Do not chase too many directions. Complete one small offer, one case or one client follow-up first.",
+      "When discussing cooperation, clarify boundary and delivery before discount. Trust grows from order.",
+      "Review who truly needs your work and who only drains you. Filtering creates healthier flow."
+    ],
+    career: [
+      "Write the direction down, then turn it into one immediate action. Momentum begins with movement.",
+      "Meetings, messages and portfolios are useful today, but leave space in your expression.",
+      "Refine workflow, pricing and cases. Professionalism is often visible order.",
+      "You do not need to prove everything. Show the strongest line clearly and trust becomes easier."
+    ],
+    love: [
+      "Say things clearly without forcing. Gentle clarity is stronger than repeated testing.",
+      "Observe actions, not only emotions or promises. A stable bond gives the heart ground.",
+      "Turn hurt into one sentence that can be heard. Expression is not winning; it opens a path.",
+      "Do not place all attention on the other person. Settle yourself first so the bond does not tilt."
+    ],
+    beauty: [
+      "Today's beauty begins with clean complexion and ease. Less clutter, more openness.",
+      "Choose one focal point: neckline, hair, lip color or a clean jacket.",
+      "Let the body soften first. When neck and shoulders relax, the eyes and face soften too.",
+      "Leave visual space. Lighter, cleaner and more breathable styling creates presence."
+    ],
+    calm: [
+      "Do not define your whole life today. Finish one small thing and attention returns.",
+      "Scroll less and listen to the body more. Clarity often begins in quiet.",
+      "If the mind feels scattered, clear one corner, one desk or one list.",
+      "Lower the standard and slow the breath. Stabilizing yourself is real progress."
+    ],
+    health: [
+      "Care first for sleep, water and neck tension. A softer body makes the face less tense.",
+      "This is not medical advice; simply observe fatigue, dryness, appetite and irritability as signals.",
+      "Warm food, slow walking and less cold intake can support a steadier state today.",
+      "If energy is low, reduce depletion first. Less forcing is better than late repair."
+    ]
+  }
+};
+
+const topicNames = {
+  zh: {
+    wealth: "财气",
+    career: "事业",
+    love: "感情",
+    beauty: "气色",
+    calm: "心神",
+    health: "身心"
+  },
+  en: {
+    wealth: "wealth",
+    career: "work",
+    love: "relationship",
+    beauty: "presence",
+    calm: "mind",
+    health: "wellbeing"
+  }
+};
+
+const timeBranchNames = {
+  zh: {
+    子: "子时", 丑: "丑时", 寅: "寅时", 卯: "卯时", 辰: "辰时", 巳: "巳时",
+    午: "午时", 未: "未时", 申: "申时", 酉: "酉时", 戌: "戌时", 亥: "亥时"
+  },
+  en: {
+    子: "Zi hour", 丑: "Chou hour", 寅: "Yin hour", 卯: "Mao hour", 辰: "Chen hour", 巳: "Si hour",
+    午: "Wu hour", 未: "Wei hour", 申: "Shen hour", 酉: "You hour", 戌: "Xu hour", 亥: "Hai hour"
+  }
+};
+
+const timeRhythmCopy = {
+  zh: [
+    "此刻宜先收心，再行动。让呼吸慢一点，判断会更清楚。",
+    "此刻适合轻一点表达，少一点解释，把状态留得干净。",
+    "此刻适合做一个小整理：发型、衣领、桌面或一句要说的话。",
+    "此刻不宜急着求结果，先确认自己真正想要的方向。",
+    "此刻适合把外在形象和内在节奏对齐，越简洁越有力量。"
+  ],
+  en: [
+    "This moment favors settling before action. Slower breath makes judgment clearer.",
+    "This moment favors lighter expression and less over-explaining.",
+    "This moment favors one small refinement: hair, collar, desk or one sentence.",
+    "Do not rush for a result. First confirm the direction you truly want.",
+    "Align outer image with inner rhythm. Simplicity carries strength."
+  ]
+};
+
+const officerReadingFrame = {
+  zh: {
+    jian: "重在起势。不求马上见结果，先把一个方向立起来，做一个可执行的小开始。",
+    chu: "重在去旧。适合清掉消耗、误会和多余负担，状态越干净，后面的路越顺。",
+    man: "重在收纳与滋养。适合补资源、补气色、补关系里的温度，但不要让承诺过满。",
+    ping: "重在调和。不宜硬冲，适合把节奏放平，把话说稳，把关系和选择重新摆正。",
+    ding: "重在落位。适合确定一个小决定、一个安排或一条边界，让心里更有秩序。",
+    zhi: "重在跟进。适合把手里的事继续推进，但要记得用力有度，不要把坚持变成拧巴。",
+    po: "重在止损。适合看见问题、拆掉旧模式，不宜冲动加码或强求圆满。",
+    wei: "重在谨慎。先稳住身体和判断，重要选择多复核一步，不必急着证明自己。",
+    cheng: "重在完成。适合把准备好的事推出去、说出口、交付出去，让成果被看见。",
+    shou: "重在聚气。适合回收注意力、整理资料、收款复盘，把散开的能量收回来。",
+    kai: "重在打开。适合发布、邀约、表达和展示，让你的能力与气质被合适的人看见。",
+    bi: "重在藏养。适合休息、内修、整理后台，不必强行外放，留白也是一种推进。"
+  },
+  en: {
+    jian: "On an Establish day, begin. Do not force results; set one clear direction and take one executable step.",
+    chu: "On a Remove day, clear the old. Reduce drain, confusion and unnecessary weight so the next step is cleaner.",
+    man: "On a Full day, gather and nourish. Add resources and warmth, but do not overfill promises.",
+    ping: "On a Balance day, adjust. Do not push hard; steady the rhythm, words and choices.",
+    ding: "On a Settle day, place things. Make one small decision, arrangement or boundary clearer.",
+    zhi: "On a Hold day, follow through. Continue what is in hand, but keep effort measured.",
+    po: "On a Break day, cut loss. Notice cracks and dismantle old patterns; avoid impulsive escalation.",
+    wei: "On a Caution day, review. Stabilize body and judgment before important choices.",
+    cheng: "On a Complete day, bring prepared work to result. Publish, deliver or say what is ready.",
+    shou: "On a Receive day, gather energy. Collect attention, materials and payment; review what has scattered.",
+    kai: "On an Open day, be seen. Publish, invite, express and present to suitable people.",
+    bi: "On a Close day, preserve. Rest, refine internally and let space become progress."
+  }
+};
+
+function buildOfficerBaseReading(topic, officer, lang) {
+  const name = topicNames[lang]?.[topic] || topicNames[lang]?.calm || topic;
+  const frame = officerReadingFrame[lang]?.[officer.key] || "";
+  if (lang === "zh") {
+    return `${name}签：今日值${officer.zh}，${frame}`;
+  }
+  return `Today's ${name} follows ${officer.en}: ${frame}`;
+}
+
+function buildReadingCta(topic, lang) {
+  const name = topicNames[lang]?.[topic] || topicNames[lang]?.calm || topic;
+  if (lang === "zh") {
+    return `如果你想把这条${name}提示，进一步落到自己的出生资料、近期状态和气质色彩里，可以添加颜习社微信 ${OWNER_WECHAT}，我会帮你做更贴近个人的梳理。`;
+  }
+  return `If you want to connect this ${name} note with your birth profile, current state and personal colors, add Yanxishe on WeChat: ${OWNER_WECHAT}.`;
+}
+
 const dailyVerses = [
   {
     zh: "山中何事？松花酿酒，春水煎茶。",
@@ -1509,6 +1685,34 @@ function pickDaily(list, offset = 0) {
   return list[(daySeed() + offset) % list.length];
 }
 
+function stringSeed(value = "") {
+  return Array.from(value).reduce((sum, char) => sum + char.charCodeAt(0), 0);
+}
+
+function pickDailyByContext(list, topic = "", offset = 0, date = new Date()) {
+  if (!list?.length) return "";
+  const dayPillar = getDayPillar(date);
+  const stemIndex = stems.indexOf(dayPillar[0]);
+  const branchIndex = branches.indexOf(dayPillar[1]);
+  const officer = getTwelveOfficer(date);
+  const seed = daySeed(date) + stringSeed(topic) + (stemIndex + 1) * 7 + (branchIndex + 1) * 11 + stringSeed(officer.key) + offset;
+  return list[((seed % list.length) + list.length) % list.length];
+}
+
+function getTimeBranch(date = new Date()) {
+  const hour = date.getHours();
+  const index = Math.floor(((hour + 1) % 24) / 2);
+  return branches[index];
+}
+
+function pickReadingVariant(list, topic = "", offset = 0, date = new Date()) {
+  if (!list?.length) return "";
+  const timeBranch = getTimeBranch(date);
+  const randomPart = Math.floor(Math.random() * 100000);
+  const seed = daySeed(date) + date.getHours() * 101 + stringSeed(timeBranch) + stringSeed(topic) + offset + randomPart;
+  return list[((seed % list.length) + list.length) % list.length];
+}
+
 function getDailyElement() {
   const today = new Date();
   const dayPillar = getDayPillar(today);
@@ -1617,9 +1821,33 @@ function renderDailyRetention(element) {
   if (dailyArticleCta) dailyArticleCta.textContent = cta;
   if (dailyTestResult) {
     dailyTestResult.textContent = lang === "zh"
-      ? "心里先默念一个问题，再抽一支今日签。"
-      : "Hold one quiet question, then draw today's note.";
+      ? "先深呼吸，让心安静下来。若心里有一个真正想看的问题，再抽一支今日签。"
+      : "Take a quiet breath first. If the heart has a real question, draw today's note.";
   }
+}
+
+function buildDailyReading(topic, mode = "test") {
+  const date = new Date();
+  const lang = currentLang;
+  const element = getDailyElement();
+  const dayPillar = getDayPillar(date);
+  const officer = getTwelveOfficer(date);
+  const officerItem = officerCopy[lang][officer.key];
+  const solar = getCurrentSolarTerm(date);
+  const solarName = lang === "zh" ? solar.current.zh : solar.current.en;
+  const officerBase = buildOfficerBaseReading(topic, officer, lang);
+  const addonTopic = dailyReadingAddons[lang][topic] ? topic : "calm";
+  const addon = pickReadingVariant(dailyReadingAddons[lang][addonTopic], topic, mode === "oracle" ? 37 : 19, date);
+  const timeBranch = getTimeBranch(date);
+  const timeName = timeBranchNames[lang][timeBranch];
+  const timeNote = pickReadingVariant(timeRhythmCopy[lang], `${topic}-${timeBranch}`, mode === "oracle" ? 61 : 43, date);
+  const cta = buildReadingCta(topic, lang);
+
+  if (lang === "zh") {
+    return `${officerBase}\n\n今日气象：${dayPillar}日，属${officerItem.grade}。${solarName}气中，宜顺势而行：${addon}\n\n${timeName}提示：${timeNote}\n\n${cta}`;
+  }
+
+  return `${officerBase}\n\nDaily note: ${dayPillar} day, ${officerItem.grade}. Under ${solarName}, move with the day: ${addon}\n\n${timeName} note: ${timeNote}\n\n${cta}`;
 }
 
 function renderDaily() {
@@ -1667,11 +1895,9 @@ function renderDaily() {
 }
 
 function drawOracle() {
-  const element = getDailyElement();
   const topic = oracleTopic.value || "wealth";
-  const text = oracleCopy[currentLang][topic][element];
   const prefix = currentLang === "zh" ? "今日提示：" : "Today's note: ";
-  oracleResult.textContent = `${prefix}${text}`;
+  oracleResult.textContent = `${prefix}${buildDailyReading(topic, "oracle")}`;
 }
 
 function renderQin() {
@@ -2616,9 +2842,8 @@ qinMode.addEventListener("change", renderQin);
 document.querySelectorAll("[data-test]").forEach((button) => {
   button.addEventListener("click", () => {
     const key = button.dataset.test;
-    const element = getDailyElement();
     const prefix = currentLang === "zh" ? "今日签：" : "Today's reading: ";
-    dailyTestResult.textContent = `${prefix}${dailyTestCopy[currentLang][key][element]}`;
+    dailyTestResult.textContent = `${prefix}${buildDailyReading(key, "test")}`;
   });
 });
 

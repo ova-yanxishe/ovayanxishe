@@ -1,9 +1,9 @@
-const CACHE_NAME = "ova-yanxishe-pwa-v2";
+const CACHE_NAME = "ova-yanxishe-pwa-v20260630-officer4";
 const APP_SHELL = [
   "./",
   "./index.html",
-  "./styles.css",
-  "./script.js",
+  "./styles.css?v=20260630-officer4",
+  "./script.js?v=20260630-officer4",
   "./manifest.webmanifest",
   "./enso_circle_print_thin.png",
   "./oriental_woman_bg.jpg"
@@ -31,13 +31,15 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
   event.respondWith(
-    caches.match(event.request).then((cached) => {
-      if (cached) return cached;
-      return fetch(event.request).then((response) => {
-        const copy = response.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
-        return response;
-      }).catch(() => caches.match("./index.html"));
+    fetch(event.request).then((response) => {
+      const copy = response.clone();
+      caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+      return response;
+    }).catch(() => {
+      return caches.match(event.request).then((cached) => {
+        if (cached) return cached;
+        return caches.match("./index.html");
+      });
     })
   );
 });

@@ -679,6 +679,13 @@ h3 {
   margin: 12px 0;
 }
 
+.test-quiet-note {
+  margin: 8px 0 2px;
+  color: rgba(80, 73, 63, 0.72);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
 .daily-test-options button {
   min-height: 34px;
   padding: 0 12px;
@@ -698,6 +705,7 @@ h3 {
   min-height: 50px;
   padding-top: 8px;
   border-top: 1px solid rgba(92, 73, 50, 0.12);
+  white-space: pre-line;
 }
 
 .daily-article-card {
@@ -771,6 +779,7 @@ h3 {
   border-radius: 4px;
   background: rgba(255, 253, 247, 0.42);
   line-height: 1.7;
+  white-space: pre-line;
 }
 
 .almanac-query {
